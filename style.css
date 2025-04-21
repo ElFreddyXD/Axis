@@ -1,0 +1,742 @@
+@import "tailwindcss";
+@import url('https://fonts.cdnfonts.com/css/uber-move-text');
+
+* {
+    margin: 0;
+    font-family: 'Uber Move Text', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.25s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo {
+    width: 125px;
+    height: 75px;
+}
+
+a {
+    color: #707070;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.links {
+    margin-right: 15px;
+    padding-top: 25px;
+}
+
+.links a:hover {
+    color: rgb(144, 0, 32);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: none;
+}
+
+/* .icons {
+    padding-top: 25px;
+}
+
+.icons a:hover {
+    color: rgb(144, 0, 32);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: underline;
+} */
+
+.div1 {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.div1 img{
+    display: flex;
+    max-width: 100%;
+}
+
+.titleepro{
+    font-family: 'Uber Move Text', sans-serif;
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-left: 50px;
+    font-size: 40px;
+    max-width: 40%;
+}
+
+.div1 p{
+    padding-top: 50px;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    font-size: large;
+    max-width: 60%;
+}
+
+.div1 a{
+    font-size: large;
+    border-style: solid;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: white;
+    border-width: 15px;
+    margin-left: 100px;
+    border-radius: 15px;
+    transition: all 0.25s;
+}
+
+.div1 a:hover{
+    background-color: rgb(144, 0, 32);
+    border-color: rgb(144, 0, 32);
+}
+
+.div1 a:active{
+    background-color: rgb(255, 0, 55);
+    border-color: rgb(255, 0, 55);
+}
+
+#sec1 {
+    position: relative; /* Establece el contenedor como referencia para posicionar elementos */
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    height: 50%; /* Ajusta la altura según sea necesario */
+}
+
+.img1 {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Mantiene la proporción de la imagen */
+}
+
+#sec1 .overlay {
+    position: absolute; /* Posiciona el contenido encima de la imagen */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-95%, -50%); /* Ajusta el centro exacto */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno opcional */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    max-width: 100%;
+}
+
+.overlay h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    padding-bottom: 17px;
+}
+
+.overlay p {
+    font-size: large;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.overlay a {
+    font-size: large;
+    border-style: solid;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(50, 0, 0);
+    color: white;
+    padding: 15px;
+    border-width: 2px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.overlay a:hover {
+    background-color: rgb(144, 0, 32);
+    border-color: rgb(144, 0, 32);
+    box-shadow: 0px 0px 17px rgb(200, 50, 50);
+}
+
+.overlay a:active {
+    transition: all 0.17s;
+    background-color: rgb(255, 0, 55);
+    border-color: rgb(255, 0, 55);
+    box-shadow: 0px 0px 23px rgb(255, 50, 50);
+}
+
+.sect2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    padding-bottom: 100px;
+    padding-top: 200px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-bottom: 100px;
+}
+.container img {
+    width: 500px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container .textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container .textos h1 {
+    padding-bottom: 25px;
+    font-size: 35px;
+}
+
+.container .textos p {
+    font-size: large;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.container2 img {
+    max-width: 500px;
+    max-height: 500px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container2 .textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container2 .textos h1 {
+    padding-bottom: 25px;
+    font-size: 35px;
+}
+
+.container2 .textos p {
+    font-size: large;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.container3 img {
+    max-width: 500px;
+    max-height: 500px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container3 .textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container3 .textos h1 {
+    padding-bottom: 25px;
+    font-size: 35px;
+}
+
+.container3 .textos p {
+    font-size: large;
+}
+
+.si {
+    display: flex;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: xx-large;
+}
+
+.sec3 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 100px;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row1 img {
+    max-width: 425px;
+    max-height: 425px;
+}
+
+.row1txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 425px;
+    padding-top: 20px;
+}
+
+.row1txt h3 {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.row1txt p {
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.row1txt a:hover {
+    color: rgb(144, 0, 32);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: none;
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row2 img {
+    max-width: 425px;
+    max-height: 425px;
+}
+
+.row2txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 425px;
+    padding-top: 20px;
+}
+
+.row2txt h3 {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.row2txt p {
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.row2txt a:hover {
+    color: rgb(144, 0, 32);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: none;
+}
+
+.sec4 {
+    padding: 100px;
+}
+
+.sec4 h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.cards {
+    display: flex;
+    padding-top: 50px;
+}
+
+.card1 {
+    display: flex;
+    padding-right: 75px;
+    max-width: 300px;
+}
+
+.texts1 {
+        font-weight: 50;
+}
+
+.texts1 i {
+    font-size: x-large;
+    padding-bottom: 15px;
+}
+
+.texts1 h3 {
+    padding-bottom: 15px;
+}
+
+.texts1 p {
+    padding-bottom: 25px;
+}
+
+.texts1 a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.texts1 a:hover {
+    color: rgb(144, 0, 32);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: none;
+}
+
+.texts1 a:active {
+    color: rgb(255, 0, 55);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: none;
+}
+
+.card2 {
+    display: flex;
+    padding-right: 75px;
+    max-width: 300px; 
+}
+
+.texts2 {
+        font-weight: 50;
+}
+
+.texts2 i {
+    font-size: x-large;
+    padding-bottom: 15px;
+}
+
+.texts2 h3 {
+    padding-bottom: 15px;
+}
+
+.texts2 p {
+    padding-bottom: 25px;
+}
+
+.texts2 a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.texts2 a:hover {
+    color: rgb(144, 0, 32);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: none;
+}
+
+.texts2 a:active {
+    color: rgb(255, 0, 55);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: none;
+}
+
+.card3 {
+    display: flex;
+    padding-right: 75px;
+    max-width: 300px; 
+}
+
+.texts3 {
+        font-weight: 50;
+}
+
+.texts3 i {
+    font-size: x-large;
+    padding-bottom: 15px;
+}
+
+.texts3 h3 {
+    padding-bottom: 15px;
+}
+
+.texts3 p {
+    padding-bottom: 25px;
+}
+
+.texts3 a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.texts3 a:hover {
+    color: rgb(144, 0, 32);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: none;
+}
+
+.texts3 a:active {
+    color: rgb(255, 0, 55);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: none;
+}
+
+.last {
+    background-color: rgba(246,246,246,255);
+}
+
+/* -- Started using Copilot -- */
+
+.sec5 {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.alone {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre el texto/enlace y la imagen */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 20px; /* Espaciado interno opcional */
+}
+
+.alone .content {
+    display: flex;
+    flex-direction: column; /* Coloca el texto y el enlace en una columna */
+    justify-content: center;
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+    max-width: 500px; /* Limita el ancho del texto */
+}
+
+.alone h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    max-width: 500px;
+    margin-bottom: 50px; /* Espaciado entre el texto y el enlace */
+}
+
+.alone a {
+    font-size: large;
+    border-style: solid;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: white;
+    border-width: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.25s;
+    margin-right: 0; /* Elimina el margen derecho */
+}
+
+.alone a:hover {
+    background-color: rgb(144, 0, 32);
+    border-color: rgb(144, 0, 32);
+}
+
+.alone a:active {
+    background-color: rgb(255, 0, 55);
+    border-color: rgb(255, 0, 55);
+}
+
+.planeta {
+    margin-left: auto; /* Empuja la imagen hacia la derecha */
+}
+
+.planeta img {
+    max-width: 500px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 75px;
+}
+
+footer img {
+    width: 175px;
+    height: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(144, 0, 32);
+    transition: all 0.25s;
+    text-decoration: none;
+}
+
+footer a:active {
+    color: rgb(255, 0, 55);
+    transition: all 0.25s;
+    text-decoration: none;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link1end {
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+.end2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    max-width: 85%;
+}
+
+.rowend1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.rowend1 h3 {
+    color: white;
+    text-align: left;
+    padding-bottom: 50px;
+    font-size: 22px;
+}
+
+.rowend1 a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.rowend2 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.rowend2 h3 {
+    color: white;
+    text-align: left;
+    padding-bottom: 50px;
+    font-size: 22px;
+}
+
+.rowend2 a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.rowend3 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.rowend3 h3 {
+    color: white;
+    text-align: left;
+    padding-bottom: 50px;
+    font-size: 22px;
+}
+
+.rowend3 a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.rowend4 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.rowend4 h3 {
+    color: white;
+    text-align: left;
+    padding-bottom: 50px;
+    font-size: 22px;
+}
+
+.rowend4 a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.end3 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.socialmedia i {
+    font-size: 30px;
+    padding-right: 50px;
+    color: white;
+}
+
+.socialmedia i:hover {
+    color: rgb(144, 0, 32);
+    transition: all 0.25s;
+    text-decoration: none;
+}
+
+.socialmedia i:active {
+    color: rgb(255, 0, 55);
+    transition: all 0.25s;
+    text-decoration: none;
+}
+

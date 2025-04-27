@@ -15,8 +15,8 @@ nav {
 }
 
 .logo {
-    width: 125px;
-    height: 75px;
+    width: 150px;
+    height: 100px;
 }
 
 a {
@@ -26,18 +26,24 @@ a {
 
 nav a {
     margin-left: 15px;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .links {
+    font-size: larger;
     margin-right: 15px;
-    padding-top: 25px;
+    padding-top: 40px;
 }
 
 .links a:hover {
     color: rgb(144, 0, 32);
     transition: all 0.25s;
-    transform: translateY(-15);
+    text-decoration: none;
+}
+
+.links a:active {
+    color: rgb(255, 0, 55);
+    transition: all 0.25s;
     text-decoration: none;
 }
 
@@ -129,20 +135,21 @@ nav a {
     font-weight: 700;
     line-height: 45px;
     padding-bottom: 17px;
+    color: black;
 }
 
 .overlay p {
     font-size: large;
     padding-top: 20px;
     padding-bottom: 50px;
+    color: black;
 }
 
 .overlay a {
     font-size: large;
     border-style: solid;
-    background-color: rgb(0, 0, 0);
     border-color: rgb(50, 0, 0);
-    color: white;
+    color: black;
     padding: 15px;
     border-width: 2px;
     border-radius: 15px;
@@ -151,6 +158,7 @@ nav a {
 }
 
 .overlay a:hover {
+    color: white;
     background-color: rgb(144, 0, 32);
     border-color: rgb(144, 0, 32);
     box-shadow: 0px 0px 17px rgb(200, 50, 50);
@@ -181,6 +189,11 @@ nav a {
     width: 500px;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+    transition: all 0.25s;
 }
 
 .container .textos {
@@ -215,6 +228,11 @@ nav a {
     padding-right: 25px;
 }
 
+.container2 img:hover {
+    transform: scale(1.05);
+    transition: all 0.25s;
+}
+
 .container2 .textos {
     display: flex;
     flex-direction: column;
@@ -239,11 +257,17 @@ nav a {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .container3 img {
     max-width: 500px;
     max-height: 500px;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.container3 img:hover {
+    transform: scale(1.05);
+    transition: all 0.25s;
 }
 
 .container3 .textos {
@@ -275,13 +299,15 @@ nav a {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .rows {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-bottom: 100px;
 }
 
@@ -290,21 +316,26 @@ nav a {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    margin: 75px;
+    margin: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.row1:hover {
+    transform: translateY(-15px);
 }
 
 .row1 img {
-    max-width: 425px;
-    max-height: 425px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .row1txt {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 425px;
+    max-width: 300px;
     padding-top: 20px;
 }
 
@@ -330,23 +361,28 @@ nav a {
 .row2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    overflow: hidden; /* Evita que el contenido se desborde */
+    /* justify-content: space-between; */
     flex-direction: column;
-    margin: 75px;
+    margin: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
+.row2:hover {
+    transform: translateY(-15px);
+}
+
 .row2 img {
-    max-width: 425px;
-    max-height: 425px;
+    max-width: 340px;
+    max-height: 300px;
 }
 
 .row2txt {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 425px;
+    max-width: 340px;
     padding-top: 20px;
 }
 
@@ -369,11 +405,59 @@ nav a {
     text-decoration: none;
 }
 
-.sec4 {
+.row3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row3:hover {
+    transform: translateY(-15px);
+}
+
+.row3 img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.row3txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width: 300px;
+    padding-top: 20px;
+}
+
+.row3txt h3 {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.row3txt p {
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.row3txt a:hover {
+    color: rgb(144, 0, 32);
+    transition: all 0.25s;
+    transform: translateY(-15);
+    text-decoration: none;
+}
+
+#sec4 {
     padding: 100px;
 }
 
-.sec4 h2 {
+#sec4 h2 {
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
@@ -739,4 +823,3 @@ footer a:active {
     transition: all 0.25s;
     text-decoration: none;
 }
-

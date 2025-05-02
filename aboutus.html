@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis | Equipo Directivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <style>
+        :root {
+            --primary: #900020;
+            --primary-dark: #70001a;
+            --light: #fff;
+            --dark: #000;
+            --light-gray: #f5f5f5;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-gray);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .team-header {
+            background-color: var(--dark);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .team-header img {
+            height: 50px;
+            transition: var(--transition);
+        }
+
+        /* Contenedor Principal */
+        .team-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+
+        /* Grid del Equipo */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-card {
+            background: var(--light);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(144, 0, 32, 0.15);
+        }
+
+        .team-photo {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .team-content {
+            padding: 1.5rem;
+        }
+
+        .team-name {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .team-position {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .team-department {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        /* Filtros de Departamento */
+        .department-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-button {
+            padding: 0.6rem 1.2rem;
+            background-color: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-button:hover, .filter-button.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        /* Navegación */
+        .team-navigation {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .team-nav-button {
+            padding: 0.8rem 1.8rem;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .team-nav-button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(144, 0, 32, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .team-container {
+                padding: 3rem 1.5rem;
+            }
+            
+            .team-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            }
+            
+            .team-navigation, .department-filters {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .team-nav-button, .filter-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="#">
+                    <img src="IMG/Logo styles/Logo.png" alt="Axis Logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="aboutus.html">Sobre Nosotros</a></li>
+                <li><a href="noticias.html">Síguenos</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="team-container">
+        <h1 class="section-title">Equipo Directivo</h1>
+        
+        <!-- Filtros por departamento -->
+        <div class="department-filters">
+            <button class="filter-button active" data-department="all">Todos</button>
+            <button class="filter-button" data-department="Dirección General">Dirección</button>
+            <button class="filter-button" data-department="Desarrollo">Desarrollo</button>
+            <button class="filter-button" data-department="Diseño">Diseño</button>
+            <button class="filter-button" data-department="Análisis">Análisis</button>
+        </div>
+        
+        <!-- Grid del equipo -->
+        <div class="team-grid">
+            <!-- Gerencia -->
+            <div class="team-card" data-department="Dirección General">
+                <img src="IMG/Integrantes/Bombero.jpg" alt="Wilmer" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Wilmer</h3>
+                    <span class="team-position">CEO</span>
+                    <span class="team-department">Dirección General</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Dirección General">
+                <img src="IMG/Integrantes/Jorge.jpg" alt="Jorge Báez" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Jorge Báez</h3>
+                    <span class="team-position">CTO</span>
+                    <span class="team-department">Dirección General</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Dirección General">
+                <img src="IMG/team/juan-pablo.jpg" alt="Juan Pablo Santos" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Juan Pablo Santos</h3>
+                    <span class="team-position">Gerente de Recursos Humanos</span>
+                    <span class="team-department">Dirección General</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Dirección General">
+                <img src="IMG/team/laysha-espinal.jpg" alt="Laysha Espinal" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Laysha Espinal</h3>
+                    <span class="team-position">CFO</span>
+                    <span class="team-department">Dirección General</span>
+                </div>
+            </div>
+            
+            <!-- Desarrollo -->
+            <div class="team-card" data-department="Desarrollo">
+                <img src="IMG/Integrantes/Neeeeil.jpg" alt="Nell Espinal" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Nell Espinal</h3>
+                    <span class="team-position">Programador</span>
+                    <span class="team-department">Desarrollo</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Desarrollo">
+                <img src="IMG/Integrantes/JoshuaGorda.jpg" alt="Josué Acosta" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Josué Acosta</h3>
+                    <span class="team-position">Programador</span>
+                    <span class="team-department">Desarrollo</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Desarrollo">
+                <img src="IMG/Integrantes/El Ma Pro.jpg" alt="Angel Ogando" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Angel Ogando</h3>
+                    <span class="team-position">Team Content</span>
+                    <span class="team-department">Desarrollo</span>
+                </div>
+            </div>
+            
+            <!-- Diseño -->
+            <div class="team-card" data-department="Diseño">
+                <img src="IMG/Integrantes/Keira.jpg" alt="Keira Cruz" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Keira Cruz</h3>
+                    <span class="team-position">Diseñadora Gráfica</span>
+                    <span class="team-department">Diseño</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Diseño">
+                <img src="IMG/team/lisanny-nieves.jpg" alt="Lisanny Nieves" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Lisanny Nieves</h3>
+                    <span class="team-position">Diseñadora Gráfica</span>
+                    <span class="team-department">Diseño</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Diseño">
+                <img src="IMG/Integrantes/Maria José.jpg" alt="María Germán" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">María Germán</h3>
+                    <span class="team-position">Diseñadora Web</span>
+                    <span class="team-department">Diseño</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Diseño">
+                <img src="IMG/Integrantes/Edwin.jpg" alt="Edwin Pérez" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Edwin Pérez</h3>
+                    <span class="team-position">Diseñador Web</span>
+                    <span class="team-department">Diseño</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Diseño">
+                <img src="IMG/team/kamila-urena.jpg" alt="Kamila Ureña" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Kamila Ureña</h3>
+                    <span class="team-position">Diseñadora Web</span>
+                    <span class="team-department">Diseño</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Diseño">
+                <img src="IMG/Integrantes/Mejia.jpg" alt="Isabela" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Isabela</h3>
+                    <span class="team-position">Diseñadora Web</span>
+                    <span class="team-department">Diseño</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Diseño">
+                <img src="IMG/Integrantes/Luanne.jpg" alt="Luanne" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Luanne</h3>
+                    <span class="team-position">Administradora de base de datos</span>
+                    <span class="team-department">Diseño</span>
+                </div>
+            </div>
+            
+            <!-- Análisis -->
+            <div class="team-card" data-department="Análisis">
+                <img src="IMG/Integrantes/ElFreddyXD.jpg" alt="Freddy Espinal" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Freddy Espinal</h3>
+                    <span class="team-position">Analista</span>
+                    <span class="team-department">Análisis</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Análisis">
+                <img src="IMG/Integrantes/Mailyn.jpg" alt="Smallyn Díaz" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Smallyn Díaz</h3>
+                    <span class="team-position">Analista</span>
+                    <span class="team-department">Análisis</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Análisis">
+                <img src="IMG/Integrantes/Ambar.jpg" alt="Anabar Pérez" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Ambar Pérez</h3>
+                    <span class="team-position">Analista</span>
+                    <span class="team-department">Análisis</span>
+                </div>
+            </div>
+            
+            <div class="team-card" data-department="Análisis">
+                <img src="IMG/Integrantes/Sebatian xd.jpg" alt="Sebastián Ramos" class="team-photo">
+                <div class="team-content">
+                    <h3 class="team-name">Sebastián Ramos</h3>
+                    <span class="team-position">Analista</span>
+                    <span class="team-department">Análisis</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navegación -->
+        <div class="team-navigation">
+            <a href="index.html" class="team-nav-button">
+                <i class="fas fa-home"></i> Inicio
+            </a>
+            <a href="noticias.html" class="team-nav-button">
+                <i class="fas fa-newspaper"></i> Noticias
+            </a>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contents">
+                <div class="footer-logo">
+                    <img src="IMG/Logo styles/Logo.png" alt="Axis Logo">
+                </div>
+                <div class="link-column">
+                    <h4>Compañía</h4>
+                    <a href="#">Quienes somos</a>
+                    <a href="#">Lo que ofrecemos</a>
+                    <a href="#">Sala de prensa</a>
+                </div>
+                <div class="link-column">
+                    <h4>Productos</h4>
+                    <a href="#">Viaja</a>
+                    <a href="#">Conduce</a>
+                    <a href="#">Entregas</a>
+                </div>
+                <div class="link-column">
+                    <h4>Ciudadanía</h4>
+                    <a href="#">Seguridad</a>
+                    <a href="#">Sostenibilidad</a>
+                </div>
+                <div class="link-column-contact">
+                    <h4>Contacto</h4>
+                    <a href="mailto:21-0477@copphu.unphu.edu.do">Contáctanos</a>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Axis Technologies. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Efecto de carga suave
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.team-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = `all 0.5s ease ${index * 0.1}s`;
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            });
+
+            // Filtrado por departamento
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const teamCards = document.querySelectorAll('.team-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remover clase active de todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    button.classList.add('active');
+
+                    const department = button.dataset.department;
+
+                    teamCards.forEach(card => {
+                        if (department === 'all' || card.dataset.department === department) {
+                            card.style.display = 'block';
+                            // Agregar animación al mostrar
+                            card.style.animation = 'fadeIn 0.5s ease';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // Agregar animación de fadeIn
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

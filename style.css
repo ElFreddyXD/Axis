@@ -191,6 +191,7 @@
   
   .decor-left {
     position: absolute;
+    opacity: 50%;
     top: 100%;
     left: 0;
     width: 550px;
@@ -200,6 +201,7 @@
 
 .decor-right2 {
     position: absolute;
+    opacity: 50%;
     top: 100%;
     right: 0%;
     width: 300px;
@@ -218,7 +220,7 @@
   
   .about-image {
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-left: 2rem;
@@ -227,6 +229,7 @@
   .about-content {
     max-width: 500px;
     text-align: left;
+    left: 4%;
     padding: 70px 25px 70px 35px;
     background-color: rgba(255, 255, 255, 0.945);
     border-radius: 8px;
@@ -244,12 +247,14 @@
     font-size: 1.1rem;
     color: var(--secondary);
     line-height: 1.6;
+    text-align: justify;
   }
   
   .about-content a {
     text-decoration: none;
     display: inline-block;
-    margin-top: 1.5rem;
+    margin-top: 50px;
+    font-size: large;
     color: black;
     transition: var(--transition);
   }
@@ -261,7 +266,7 @@
   /* Problem/Solution Section */
   .problem-solution-section {
     position: relative;
-    padding: 5rem 1rem;
+    padding: 8rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -322,6 +327,7 @@
   
   .decor-right3 {
     position: absolute;
+    opacity: 50%;
     bottom: 0%;
     left: 70%;
     width: 550px;
@@ -413,7 +419,7 @@
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 3rem;
-    color: black;
+    color: var(--secondary);
   }
   
   .news-cards {
@@ -431,6 +437,11 @@
     background: var(--light);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .news-card:hover {
+    transform: translateY(-10px);
+    transition: var(--transition);
   }
   
   .news-card i {

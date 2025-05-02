@@ -1,207 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Axis - Soluciones tecnológicas para infraestructuras urbanas inteligentes">
+    <title>Axis | Innovación Urbana</title>
+    <link rel="icon" href="IMG/icon styles/LogoIcono.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <title>Axis</title>
 </head>
 <body>
-    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <nav>
-            <a href="#Logo">
-                <img class="logo" src="IMG/Logo styles/Artboard 1_8.png" alt="Axis_Logo">
-            </a>
-            <ul>
-                <div class="links">
-                    <a href="#Inicio">Inicio</a>
-                    <a href="#sec1">Sobre Nosotros</a>
-                    <a href="#sec4">Siguenos</a>
-                </div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="#">
+                    <img src="IMG/Logo styles/Logo.png" alt="Axis Logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#news">Síguenos</a></li>
             </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
-    <section class="Main">
-        <div class="div1">
-            <h1 class="titleepro">“Donde la innovación crea el futuro”</h1>
-            <p>Nuestra empresa, Axis, se enfoca en asesoría y desarrollo de soluciones tecnológicas que 
-                modernicen y optimicen infraestructuras urbanas. Surge de la necesidad consistente de este mundo 
-                cada vez más moderno y actualizado de implementar soluciones que optimicen y automaticen 
-                procesos.</p>
-            <a href="#">Conoce Axis GO</a>
-        </div>
-    </section>
-    <section id="sec1">
-        <img src="IMG/Bombero.jpg" alt="Bombero" class="img1">
-        <div class="overlay">
-            <h1>Acerca de nosotros</h1>
-            <p>Nosotros somos Axis, somos una empresa de asesoría y desarrollo tecnológico de alcance 
-                internacional, donde nos dedicamos a proporcionar un espacio de desarrollo y/o evolución en 
-                diferentes ciudades, buscando el poder modernizarlas mediante la implementación de propuestas 
-                y soluciones tecnológicas.</p>
-            <a href="#Aboutus">Conoce nuestro equipo</a>
-        </div>
-    </section>
-    <section class="sect2">
-        <div class="container">
-            <img src="IMG/Problematica.jpeg" alt="Tapones">
-            <div class="textos">
-                <h1 class="titulo2">Problematica</h1>
-                <p>En la Republica Dominicana se han destacado muchos casos problemáticos que mantiene
-                    estancado al país… en un punto de descenso, y dentro de estos casos, se encuentra uno de los más
-                    comunes en el área metropolitana, y es el sistema de tránsito y los cientos de casos que suceden en
-                    las calles que comprenden a esta área del país.
-                    </p>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <img src="IMG/ciudadbg.png" alt="Ciudad" class="hero-bg">
+        <div class="hero-content">
+            <div class="overlay-hero">
+                <img src="IMG/Logo styles/Logo Axis Full White Transparente.png" alt="Axis Logo Transparente" class="logo-hero">
+                <!-- <a href="#" class="cta-button">Conoce Axis GO</a> -->
             </div>
         </div>
-        <div class="container2">
-            <img src="IMG/Imagen de WhatsApp 2025-04-21 a las 17.50.54_a131c647.jpg" alt="Imagen xd">
-            <div class="textos">
-                <h1 class="titulo2">Propuesta</h1>
-                <p>Dado el caso, se ofrece la siguiente propuesta de “Modernización a los Sistemas de Tránsito y
-                    Seguridad Vial”, con la idea de ofrecer un espacio de mejora a esta situación que han enfrentado
-                    las áreas metropolitanas del país. </p>
-            </div>
-        </div>
-        <div class="container3">
-            <img src="IMG/Logo styles/Artboard 1_6.png" alt="Imagen xd">
-            <div class="textos">
-                <h1 class="titulo2">Objetivo General</h1>
-                <p>Optimizar la infraestructura vial, así mismo el sistema de tránsito y seguridad vial en las áreas de
-                    mayor concentración urbana y tránsito vehicular en el país, más específicamente en áreas y/o
-                    avenidas (calles) de mayor estancamiento vial en el distrito nacional, con el fin de reducir el tiempo
-                    promedio establecido durante un tránsito y optimizar la calidad de vida de los ciudadanos.
-                    </p>
-            </div>
-        </div>
+        <!-- Imágen decorativa -->
+        <!-- <img src="IMG/Graphic Elements/Graphics1Right.png" alt="Decoración derecha" class="decor-right"> -->
     </section>
-    <h1 class="si">Misión, Visión y Valores de la empresa</h1>
-    <section class="sec3">
-        <div class="rows">
-            <div class="row1">
-                <img src="IMG/infraestructura-urbana-y-de-transporte.jpg" alt="Mision">
-                <div class="row1txt">
-                    <h3>Mision</h3>
-                    <p>Nuestra misión es desarrollar y ofrecer soluciones tecnológicas de vanguardia que modernicen y optimicen las infraestructuras urbanas, mejorando la calidad de vida y creando entornos urbanos más inteligentes, eficientes y sostenibles.</p>
-                    <!-- <a class="button2" href="">Link 1</a> -->
+
+    <!-- About Section (Bombero) -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <img src="IMG/Integrantes/Bombero.jpg" alt="Sistemas de seguridad modernos" class="about-image">
+            <div class="about-content">
+                <h2>Acerca de nosotros</h2>
+                <p>Somos Axis, una empresa de asesoría y desarrollo tecnológico de alcance internacional, dedicada a modernizar ciudades mediante soluciones tecnológicas innovadoras.</p>
+                <a href="aboutus.html">Nuestro Equipo</a>
+            </div>
+        </div>
+        <img src="IMG/Graphic Elements/Graphics3.png" alt="" class="decor-left">
+        <img src="IMG/Graphic Elements/Graphics2Right.png" alt="" class="decor-right2">
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section id="ps" class="problem-solution-section">
+        <div class="ps-container problem">
+            <img src="IMG/Imagen de WhatsApp 2025-04-21 a las 17.50.54_a131c647.jpg" alt="Problemas de tráfico urbano">
+            <div class="ps-content">
+                <h3>Lo que ofrecemos</h3>
+                <p>Ofrecemos Modernización a los Sistemas de Tránsito y Seguridad Vial para mejorar la situación de las áreas metropolitanas.</p>
+            </div>
+        </div>
+        
+        <div class="ps-container solution">
+            <img src="IMG/Problematica.jpeg" alt="Propuesta de solución">
+            <div class="ps-content">
+                <h3>Problematica</h3>
+                <p>En la República Dominicana se han destacado muchos casos que mantienen estancado al país en el área metropolitana</p>
+            </div>
+        </div>
+        
+        <div class="ps-container objective">
+            <img src="IMG/puente-duarte-santo-domingo-este.jpg" alt="Objetivo de Axis">
+            <div class="ps-content">
+                <h3>Objetivo General</h3>
+                <p>Optimizar la infraestructura vial y el sistema de tránsito en áreas de mayor concentración urbana.</p>
+                <a href="#">Axis GO</a>
+            </div>
+        </div>
+        <img src="IMG/Graphic Elements/Graphics3Right.png" alt="" class="decor-right3">
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <h2 class="section-title">Misión, Visión y Valores</h2>
+        <div class="mission-cards">
+            <div class="mission-card">
+                <img src="IMG/infraestructura-urbana-y-de-transporte.jpg" alt="Misión de Axis">
+                <div class="card-content">
+                    <h3>Misión</h3>
+                    <p>Desarrollar soluciones tecnológicas que modernicen infraestructuras urbanas.</p>
                 </div>
             </div>
-            <div class="row2">
-                <img src="IMG/observatorio2-1020x600.jpg" alt="Vision">
-                <div class="row2txt">
-                    <h3>Vision</h3>
-                    <p>Ser líder global en soluciones tecnológicas innovadoras que impulsen la evolución de las ciudades hacia un futuro inteligente, sostenible y conectado.</p>
-                    <!-- <a class="button2" href="">Link 2</a> -->
+            <div class="mission-card">
+                <img src="IMG/observatorio2-1020x600.jpg" alt="Visión de Axis">
+                <div class="card-content">
+                    <h3>Visión</h3>
+                    <p>Ser líder global en soluciones tecnológicas para ciudades inteligentes.</p>
                 </div>
             </div>
-            <div class="row3">
-                <img src="IMG/Logo styles/Artboard 1.png" alt="Valores">
-                <div class="row3txt">
+            <div class="mission-card">
+                <img src="IMG/Logo styles/Artboard 1.png" alt="Valores de Axis">
+                <div class="card-content">
                     <h3>Valores</h3>
-                    
-                    <p>- Innovación</p>
-                    <p>- Sostenibilidad</p>
-                    <p>- Colaboración</p>
-                    <p>- Responsabilidad</p>
-                    <p>- Compromiso</p>
-                    <p>- Excelencia</p>
-                    <p>- Transparencia</p>
-                    <!-- <a class="button3" href="">Link 3</a> -->
+                    <ul>
+                        <li>Innovación</li>
+                        <li>Sostenibilidad</li>
+                        <li>Excelencia</li>
+                        <li>Transparencia</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section id="sec4">
-        <h2>Sigue las noticias sobre las últimas novedades</h2>
-        <div class="cards">
-            <div class="card1">
-                <div class="texts1">
-                    <i class="fa-regular fa-bell"></i>
-                    <h3>Sala de prensa</h3>
-                    <p>Recibe anuncios sobre asociaciones, actualizaciones de la app, iniciativas y más cerca de ti y en todo el mundo.</p>
-                    <a class="button2" href="">Ingresa a la sala de prensa</a>
-                </div>
-            </div>
-            <div class="card2">
-                <div class="texts2">
-                    <i class="fa-solid fa-people-group"></i>
-                    <h3>Blog</h3>
-                    <p>Encuentra nuevos lugares para explorar, conoce los productos de Axis, nuestras asociaciones y más.</p>
-                    <a class="button2" href="">Lee nuestras publicaciones</a>
-                </div>
-            </div>
-            <div class="card3">
-                <div class="texts3">
-                    <i class="fa-regular fa-chart-bar"></i>
-                    <h3>Relaciones con los inversionistas</h3>
-                    <p>Descarga reportes financieros, consulta los planes del próximo trimestre y conoce nuestras iniciativas de responsabilidad corporativa.</p>
-                    <a class="button2" href="">Obtén más información</a>
-                </div>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <h2>Sigue las últimas novedades</h2>
+        <div class="news-cards">
+            <div class="news-card">
+                <i class="fas fa-bell"></i>
+                <h3>Sala de prensa</h3>
+                <p>Recibe anuncios sobre asociaciones, actualizaciones y más.</p>
+                <a href="noticias.html" class="news-button">Ingresa a la sala</a>
             </div>
         </div>
+        <img src="IMG/Graphic Elements/Graphics4.png" alt="" class="decor-bg-l">
+        <img src="IMG/Graphic Elements/Graphics3.png" class="decor-bg-r">
     </section>
-    <div class="last">
-        <section class="sec5">
-            <div class="alone">
-                <div class="content">
-                    <h1>Ven a reimaginar con nosotros</h1>
-                    <a href="">Buscar vacantes</a>
+
+    <!-- Careers Section -->
+    <!-- <section class="careers-section">
+        <div class="careers-content">
+            <h2>Ven a reimaginar con nosotros</h2>
+            <a href="#" class="cta-button">Buscar vacantes</a>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contents">
+                <div class="footer-logo">
+                    <img src="IMG/Logo styles/Logo.png" alt="Axis Logo">
                 </div>
-                    <div class="planeta">
-                        <img src="IMG/globe_background-01.png" alt="Planeta">
-                    </div>
+                <div class="link-column">
+                    <h4>Compañía</h4>
+                    <a href="#about">Quienes somos</a>
+                    <a href="#ps">Lo que ofrecemos</a>
+                    <a href="#news">Sala de prensa</a>
+                </div>
+                <div class="link-column">
+                    <h4>Productos</h4>
+                    <a href="#">Viaja</a>
+                    <a href="#">Conduce</a>
+                    <a href="#">Entregas</a>
+                </div>
+                <div class="link-column">
+                    <h4>Politicas de Privacidad</h4>
+                </div>
+                <div class="link-column-contact">
+                    <h4>Contacto</h4>
+                    <a href="mailto:21-0477@copphu.unphu.edu.do">Contáctanos</a>
                 </div>
             </div>
-        </section>
-    </div>
-    <footer>
-        <section class="end">
-            <div class="imgend">
-                <img src="IMG/Logo styles/Artboard 1_8.png" alt="Logo Footer">
-            </div>
-            <div class="link1end">
-                <a href="#">Visita el centro de ayuda</a>
-            </div>
-        </section>
-        <div class="end2">
-            <div class="rowend1">
-                <h3>Compañia</h3>
-                <a href="#">Quienes somos</a>
-                <a href="#">Lo que ofrecemos</a>
-                <a href="#">Sala de prensa</a>
-                <a href="#">inversionistas</a>
-                <a href="#">Blog</a>
-                <a href="#">Oportunidades Laborales</a>
-            </div>
-            <div class="rowend2">
-                <h3>Productos</h3>
-                <a href="#">Viaja</a>
-                <a href="#">Conduce</a>
-                <a href="#">Hacer Entregas</a>
-                <a href="#">Tarjetas de regalo</a>
-            </div>
-            <div class="rowend3">
-                <h3>Ciudadania Global</h3>
-                <a href="#">Seguridad</a>
-                <a href="#">Sostenibilidad</a>
-            </div>
-            <div class="rowend4">
-                <h3>Viajes</h3>
-                <a href="#">Reserva</a>
-                <a href="#">Ciudades</a>
-                <a href="#">Casas</a>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
-        <div class="end3">
-            <div class="socialmedia">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+        <div class="copyright">
+            <p>&copy; 2025 Axis Technologies. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

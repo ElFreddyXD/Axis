@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
   }
 
   a {
@@ -333,6 +334,7 @@
   .copyright {
     text-align: center;
     margin-top: 3rem;
+    padding-bottom: 17px;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
